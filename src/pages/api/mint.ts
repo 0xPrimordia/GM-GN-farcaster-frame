@@ -46,7 +46,7 @@ export default async function handler(
       if (isNFTOwned) {
         return res.status(200).send(
           computeHtml({
-            imagePath: "<next_js_image_path>",
+            imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
             postType: "start",
             content: "You already own the NFT",
           })
@@ -58,7 +58,7 @@ export default async function handler(
       if (isBalanceLow) {
         return res.status(200).send(
           computeHtml({
-            imagePath: "<next_js_image_path>",
+            imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
             postType: "start",
             content: "Sorry, we're out of gas!",
           })
@@ -67,7 +67,7 @@ export default async function handler(
 
       return res.status(200).send(
         computeHtml({
-          imagePath: "<next_js_image_path>",
+          imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
           postType: "recast",
           content: "Like & recast to mint",
         })
@@ -80,7 +80,7 @@ export default async function handler(
       if (!hasRecasted) {
         return res.status(200).send(
           computeHtml({
-            imagePath: "<next_js_image_path>",
+            imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
             postType: "recast",
             content: "Like is required to mint the NFT",
           })
@@ -101,7 +101,7 @@ export default async function handler(
 
       return res.status(200).send(
         computeHtml({
-          imagePath: "<next_js_image_path>",
+          imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
           postType: "mint",
           content: "Mint",
         })
@@ -113,7 +113,7 @@ export default async function handler(
 
       return res.status(200).send(
         computeHtml({
-          imagePath: "<next_js_image_path>",
+          imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
           postType: "start", // Do your own custom post_url after user has minted the NFT + clicks your button
           content: "Congrats! The NFT was sent to your wallet",
         })
@@ -122,7 +122,7 @@ export default async function handler(
   } catch (err) {
     return res.status(200).send(
       computeHtml({
-        imagePath: "<next_js_image_path>",
+        imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
         postType: "start",
         content: "Something went wrong",
       })
