@@ -17,12 +17,12 @@ export const computeHtml = ({
         <meta property="og:title" content="Thirdweb Frames" />
         <meta
           property="og:image"
-          content="https://${config.hostUrl}${imagePath}"
+          content="${imagePath}"
         />
         <meta property="fc:frame" content="vNext" />
         <meta
           property="fc:frame:image"
-          content="https://${config.hostUrl}${imagePath}"
+          content="${imagePath}"
         />
         <meta
           property="fc:frame:post_url"
