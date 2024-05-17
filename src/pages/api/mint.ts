@@ -92,7 +92,7 @@ export default async function handler(
       if (!hasLiked) {
         return res.status(200).send(
           computeHtml({
-            imagePath: "/farcaster.png",
+            imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
             postType: "recast",
             content: "Like is required to mint the NFT",
           })
