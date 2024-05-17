@@ -1,3 +1,8 @@
+import { Button, Frog } from 'frog'
+import { devtools } from 'frog/dev'
+import { serveStatic } from 'frog/serve-static'
+ 
+export const app = new Frog()
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
