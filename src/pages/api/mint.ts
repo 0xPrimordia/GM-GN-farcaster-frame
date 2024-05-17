@@ -74,31 +74,7 @@ export default async function handler(
       );
     }
 
-    if (type === "recast") {
-      const hasRecasted = await Warpcast.hasRecasted(action.interactor.fid);
-
-      if (!hasRecasted) {
-        return res.status(200).send(
-          computeHtml({
-            imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
-            postType: "recast",
-            content: "Like is required to mint the NFT",
-          })
-        );
-      }
-
-      const hasLiked = await Warpcast.hasLiked(action.interactor.fid);
-
-      if (!hasLiked) {
-        return res.status(200).send(
-          computeHtml({
-            imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
-            postType: "recast",
-            content: "Like is required to mint the NFT",
-          })
-        );
-      }
-
+    
       return res.status(200).send(
         computeHtml({
           imagePath: "https://7f02867cd22acd60803070fbbcac9bc7.ipfscdn.io/ipfs/bafybeidyzzuf72qjuge7zrbjvupve6kl4surrsbayi6a2k7jqzo3hvgow4/GM.gif",
@@ -106,7 +82,7 @@ export default async function handler(
           content: "Mint",
         })
       );
-    }
+    
 
     if (type === "mint") {
       await ThirdWebEngine.mint(action.interactor.custody_address);
