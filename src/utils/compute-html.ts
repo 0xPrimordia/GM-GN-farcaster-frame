@@ -26,7 +26,7 @@ export const computeHtml = ({
         />
         <meta
           property="fc:frame:post_url"
-          content="https://${config.hostUrl}/api/mint?type=${postType}"
+          content="${config.hostUrl}/api/mint?type=${postType}"
         />
         <meta property="fc:frame:button:1" content="${content}" />
       </head>
